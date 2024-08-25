@@ -4,14 +4,14 @@ import logoUido from '../imagens/logoUIDO.png';
 export function Header() {
   return (
      <header className="divHeader">
-        <div>
+        <div className='logoHeader'>
           <img src={logoUido} alt="logo da empresa UIDO onde tem seu nome colorido" />
         </div>
         <div className='divLink'>
-          <a href="#">Início</a>
-          <a href="#">Quem somos</a>
-          <a href="#">Projetos</a>
-          <a href="#">Serviços</a>
+          <a href="#divBanner ">Início</a>
+          <a href="#divContent">Quem somos</a>
+          <a href="#divProjetos ">Projetos</a>
+          <a href="#divServicos">Serviços</a>
 
           <button>Entrar em contato</button>
         </div>

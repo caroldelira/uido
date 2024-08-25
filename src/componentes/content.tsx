@@ -5,7 +5,7 @@ import imgAlex from '../imagens/alexFoto.png';
 
 export function Content() {
   return (
-     <div className="divContent">
+     <div id="divContent">
       <div className='divImg'>
         <img className='imgCarol' src={imgCarol} alt="imagem de uma mulher" />
         <img className='imgAlex' src={imgAlex} alt="imagem de um homem" />
