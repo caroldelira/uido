@@ -83,7 +83,7 @@ export function Projetos() {
           <a href="https://www.behance.net/uidodesenvo" target="_blank" rel="noreferrer">
             <img src={iconBehance} alt="" />
           </a>
-          <a href="#">
+          <a href="#divBanner">
             <img src={iconWhatsapp} alt="" />
           </a> 
         </div>
