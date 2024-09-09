@@ -15,13 +15,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 80px;
     background-color: #000000;
+    z-index: 9999;
 
-    .divLink {
-      display: flex;
-      gap: 34px;
+    img {
+      width: 80%;
     }
+  }
+
+  .divLink {
+    display: flex;
+    gap: 34px;
 
     a {
       text-decoration: none;
@@ -46,21 +51,22 @@
     visibility: visible;
     transform: scaleX(1);
     }
+  }
 
-    button {
-      background-color: #111827;
-      color: #ffffff;
-      border: none;
-      padding: 8px 18px;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
+
+  @media (min-width: 1380px) {
+    .divHeader {
+      padding: 20px 150px;
     }
+  }
 
-    button:hover {
-      background-color: #ffffff;
-      color: #111827;
+  @media (max-width: 768px) {
+    .divLink {
+      display: none;
     }
-
+    .logoHeader { 
+      margin-left: 25%;
+    }
   }
 
     /* BANNER */
@@ -106,6 +112,25 @@
     }
   }
 
+    @media (max-width: 768px) {
+      #divBanner {
+      margin-top: 100px;
+      height: auto;
+      padding: 40px;
+      width: 263px;
+      background-image: none;
+      
+      h1 {
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+
   /* CONTENT */
   
   #divContent {
@@ -115,6 +140,7 @@
     justify-content: center;
     color: #fff;
     padding: 50px;
+    margin: 0 80px;
 
     .divImg {
       display: flex;
@@ -140,6 +166,39 @@
       flex-direction: column;
       width: 100%;
       justify-content: center;
+    }
+  }
+
+  @media (min-width: 1380px) {
+    #divContent {
+      margin: 0 150px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #divContent {
+      flex-direction: column;
+      padding: 20px;
+      margin: 0;
+      gap: 20px;
+
+      .divImg {
+        margin-bottom: 20px;
+      }
+
+    .imgCarol {
+      margin-top: 80px;
+      width: 160px;
+      height: 204px;
+    }
+
+    .imgAlex {
+      margin-top: 280px;
+      width: 160px;
+      height: 204px;
+      margin-left: -60px;
+    }
+
     }
   }
 
@@ -186,6 +245,28 @@
     }
   }
 
+  @media (max-width: 768px) {
+    #divServicos {
+    padding: 20px;
+
+      .divCards {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .card {
+        width: 100%;
+        height: auto;
+        img {
+          width: 60px;
+          margin-top: 20px;
+        }
+        span {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
   /* PROJETOS */
 
   #divProjetos {
@@ -205,12 +286,6 @@
     gap: 30px;
     justify-content: center;
     width: 50%;
-  }
-
-  @media (max-width: 1380px) {
-      .divCardProjeto{
-      width: 80%;
-    }
   }
 
   .divCardProjetoSpan {
@@ -233,7 +308,7 @@
     text-align: left;
   }
 
-  .divLink {
+  .divLinkProjetos {
       display: flex;
       gap: 34px;
     }
@@ -255,12 +330,12 @@
       visibility: hidden;
       transform: scaleX(0);
       transition: all 0.3s ease-in-out;
-    }
+    };
 
     a:hover::after {
     visibility: visible;
     transform: scaleX(1);
-    }
+    };
 
     .detalhes {
       font-size: 12px;
@@ -276,19 +351,52 @@
       gap: 30px;
       justify-content: center;
     }
+
+    @media (max-width: 1380px) {
+      .divCardProjeto{
+      width: 80%;
+    }
+    }
+
+    @media (max-width: 768px) {
+      #divProjetos {
+        padding: 20px;
+      } 
+      
+      .divCardProjeto {
+        flex-direction: column;
+        width: 100%;
+        gap:10px;
+      }
+      
+      .imgCardProjeto {
+        img {
+          width: 80%;
+        }
+      }
+
+      .divcardProjetoText {
+        margin: 20px;
+      }
+
+      .divLinkProjetos {
+        margin-top: 20px;
+      }
+
+      .linksOndeNosAchar{
+        img {
+          width: 80%;
+        }
+      }
+    }
   
     /* FOOTER */
 
     .divFooter{
-      margin: 100px 0 100px 0;
+      margin: 80px 0 80px 0;
       display: flex;
       flex-direction: column;
       gap: 30px;
-    }
-
-    .logoFooter {
-      width: 45%;
-      margin: 0 auto;
     }
 
     .spanFooter {
@@ -300,7 +408,28 @@
       text-align: center;
 
       img {
-        width: 50%;
+        width: 80%;
       }
     }
+  
+  @media (max-width: 768px) {
+      .divFooter {
+    margin: 40px 0;
+    gap: 20px;
+  }
+
+  .linkFooter img {
+    width: 50%;
+  }
+  }
 };
+
+@media (max-width: 768px) {
+
+  .App {
+    flex-direction: column;
+    align-items: center;
+    background: #000000;
+  }
+  
+}
