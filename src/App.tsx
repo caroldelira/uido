@@ -5,6 +5,7 @@ import { Header } from './componentes/header';
 import { Servicos } from './componentes/servicos';
 import { Projetos } from './componentes/Projetos';
 import { Footer } from './componentes/footer';
+import { ContactForm }from './componentes/form';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ export function App() {
       <Content />
       <Servicos />
       <Projetos />
+      <ContactForm />
       <Footer />
     </div>
   );

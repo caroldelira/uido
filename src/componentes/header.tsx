@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import logoUido from '../imagens/logoUIDO.png';
 
 export function Header() {
@@ -13,6 +12,7 @@ export function Header() {
           <a href="#divContent">Quem somos</a>
           <a href="#divServicos">Serviços</a>
           <a href="#divProjetos ">Projetos</a>
+          <a href="#orcamento ">Orçamento</a>
         </div>
       </header>
   )
