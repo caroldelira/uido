@@ -3,7 +3,6 @@
 import imgPortal from '../imagens/projetoDiaspora.png';
 import imgProlimpa from '../imagens/projetoProlimpa.png';
 import imgAirgang from '../imagens/projetoAirGang.png';
-import imgDigitalPlaces from '../imagens/projetoDigitalPlaces.png';
 import iconBehance from '../imagens/iconBehance.png';
 import iconWhatsapp from '../imagens/iconWhatsapp.png';
   
@@ -11,22 +10,6 @@ export function Projetos() {
   return (
     <div id="divProjetos">
       <h2>Projetos reais</h2>
-      <div className='divCardProjeto'>
-        <div className='imgCardProjeto'>
-          <img src={imgDigitalPlaces} alt="capa de projeto do blog portal diaspora" />
-        </div>
-        <div className='divcardProjetoText'>
-          <div className='divCardProjetoSpan'>
-            <h3>Digital Places</h3>
-            <span className='subTitulo'>UI/ UX design / Desenvolvimento No-Code Web e Mobile</span>
-            <span>Este Site foi desenvolvido para uma Agência de Marketing Estratégico, totalmente customizado de acordo com a ideia e personalidade do grupo!</span>
-            <span className='detalhes'>Feito pela UIDO do design ao desenvolvimento</span>
-          </div>
-          <div className='divLinkProjetos'>
-            <a href="https://digitalplaces.com.br/" target="_blank" rel="noreferrer">Ver site</a>
-          </div>
-        </div>
-      </div>
       <div className='divCardProjeto'>
         <div className='imgCardProjeto'>
           <img src={imgPortal} alt="capa de projeto do blog portal diaspora" />
@@ -83,7 +66,7 @@ export function Projetos() {
           <a href="https://www.behance.net/uidodesenvo" target="_blank" rel="noreferrer">
             <img src={iconBehance} alt="" />
           </a>
-          <a href="https://w.app/UIDO" target="_blank" rel="noreferrer">
+          <a href="https://wa.me/5571981365581?text=Olá,%20quero%20mais%20informações" target="_blank" rel="noreferrer">
             <img src={iconWhatsapp} alt="" />
           </a> 
         </div>
